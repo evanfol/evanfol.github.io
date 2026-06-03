@@ -8,14 +8,6 @@ body {
 .hero {
     position: relative;
     overflow: hidden;
-
-    background: linear-gradient(
-        135deg,
-        #0F172A 0%,
-        #1E293B 50%,
-        #334155 100%
-    );
-
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -78,11 +70,11 @@ body {
 
 .hero {
     background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Cpolyline points='0,450 150,380 300,420 450,280 600,320 750,200 900,240 1050,140 1200,180' fill='none' stroke='rgba(255,255,255,0.25)' stroke-width='3'/%3E%3C/svg%3E"),
         linear-gradient(
             135deg,
             #0F172A 0%,
             #1E293B 50%,
             #334155 100%
-        ),
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Cpolyline points='0,450 150,380 300,420 450,280 600,320 750,200 900,240 1050,140 1200,180' fill='none' stroke='rgba(255,255,255,0.12)' stroke-width='3'/%3E%3C/svg%3E");
+        );
 }
