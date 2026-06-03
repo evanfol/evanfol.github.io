@@ -1,4 +1,11 @@
-.page-header {
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.hero {
     position: relative;
     overflow: hidden;
 
@@ -7,55 +14,41 @@
         #0F172A 0%,
         #1E293B 50%,
         #334155 100%
-    ) !important;
+    );
+
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
 }
 
-/* Réseau de points */
-.page-header::before {
+/* Réseau de données */
+
+.hero::before {
     content: "";
     position: absolute;
     inset: 0;
 
     background-image:
-        radial-gradient(circle at 10% 25%, rgba(255,255,255,0.25) 2px, transparent 3px),
-        radial-gradient(circle at 25% 45%, rgba(255,255,255,0.25) 2px, transparent 3px),
-        radial-gradient(circle at 45% 20%, rgba(255,255,255,0.25) 2px, transparent 3px),
-        radial-gradient(circle at 60% 55%, rgba(255,255,255,0.25) 2px, transparent 3px),
-        radial-gradient(circle at 75% 30%, rgba(255,255,255,0.25) 2px, transparent 3px),
-        radial-gradient(circle at 90% 15%, rgba(255,255,255,0.25) 2px, transparent 3px);
+        radial-gradient(circle at 10% 25%, rgba(255,255,255,0.35) 2px, transparent 3px),
+        radial-gradient(circle at 25% 45%, rgba(255,255,255,0.35) 2px, transparent 3px),
+        radial-gradient(circle at 45% 20%, rgba(255,255,255,0.35) 2px, transparent 3px),
+        radial-gradient(circle at 60% 55%, rgba(255,255,255,0.35) 2px, transparent 3px),
+        radial-gradient(circle at 75% 30%, rgba(255,255,255,0.35) 2px, transparent 3px),
+        radial-gradient(circle at 90% 15%, rgba(255,255,255,0.35) 2px, transparent 3px);
 
     pointer-events: none;
 }
 
-/* Lignes du réseau */
-.page-header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background:
-        linear-gradient(
-            15deg,
-            transparent 49.8%,
-            rgba(255,255,255,0.08) 50%,
-            transparent 50.2%
-        ),
-        linear-gradient(
-            -20deg,
-            transparent 49.8%,
-            rgba(255,255,255,0.08) 50%,
-            transparent 50.2%
-        );
-
-    pointer-events: none;
+.hero h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    margin-bottom: 15px;
 }
 
-/* Texte */
-.project-name {
-    color: white !important;
-    font-weight: 700;
-}
-
-.project-tagline {
-    color: #cbd5e1 !important;
+.hero p {
+    position: relative;
+    z-index: 2;
+    font-size: 1.4rem;
+    color: #CBD5E1;
 }
