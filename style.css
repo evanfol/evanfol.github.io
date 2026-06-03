@@ -39,6 +39,29 @@ body {
     pointer-events: none;
 }
 
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            25deg,
+            transparent 49.7%,
+            rgba(255,255,255,0.12) 50%,
+            transparent 50.3%
+        ),
+        linear-gradient(
+            -15deg,
+            transparent 49.7%,
+            rgba(255,255,255,0.12) 50%,
+            transparent 50.3%
+        );
+
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 .hero h1 {
     position: relative;
     z-index: 2;
@@ -51,4 +74,15 @@ body {
     z-index: 2;
     font-size: 1.4rem;
     color: #CBD5E1;
+}
+
+.hero {
+    background-image:
+        linear-gradient(
+            135deg,
+            #0F172A 0%,
+            #1E293B 50%,
+            #334155 100%
+        ),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Cpolyline points='0,450 150,380 300,420 450,280 600,320 750,200 900,240 1050,140 1200,180' fill='none' stroke='rgba(255,255,255,0.12)' stroke-width='3'/%3E%3C/svg%3E");
 }
