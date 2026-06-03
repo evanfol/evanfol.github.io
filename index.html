@@ -1,0 +1,363 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Fol | Data Analyst Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f2937, #2563eb);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 25px;
+    }
+
+    h2 {
+      color: #1f2937;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .skills, .projects, .timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e0ecff;
+      color: #1d4ed8;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 4px 4px 12px 0;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .contact {
+      background: #1f2937;
+      color: white;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .contact a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Evan Fol</h1>
+  <p>Data Analyst | Power BI • SQL • Python • Excel</p>
+</header>
+
+<section>
+  <h2>À propos</h2>
+  <div class="about">
+    <p>
+      Bienvenue sur mon portfolio Data Analyst. Je suis spécialisé dans l’analyse,
+      la visualisation et l’exploitation des données afin d’aider les organisations
+      à prendre des décisions éclairées grâce à des indicateurs pertinents,
+      des dashboards interactifs et des analyses avancées.
+    </p>
+    <p>📊 Formation Data Analyst – OpenClassrooms (niveau Bac+4)</p>
+    <p>🎓 Master en Biologie – Université de Genève</p>
+    <p>🛠️ Power BI • SQL • Python • Excel • Power Query • DAX • KNIME • Tableau</p>
+    <p>📈 Reporting • KPI • Data Visualization • Business Analysis</p>
+  </div>
+</section>
+
+<section>
+  <h2>Compétences Techniques</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Business Intelligence</h3>
+      <p>Power BI • DAX • Power Query • Tableau</p>
+    </div>
+    <div class="card">
+      <h3>Analyse de Données</h3>
+      <p>Python • Pandas • Matplotlib • Statistiques descriptives</p>
+    </div>
+    <div class="card">
+      <h3>Bases de Données</h3>
+      <p>SQL • SQLite • Modélisation relationnelle</p>
+    </div>
+    <div class="card">
+      <h3>Reporting & Pilotage</h3>
+      <p>KPI • Dashboards • Reporting automatisé • Analyse de performance</p>
+    </div>
+    <div class="card">
+      <h3>Préparation des Données</h3>
+      <p>Data Cleaning • Contrôle qualité • Fusion • Transformation</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projets Data</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Faites une analyse de ventes pour un e-commerce</h3>
+      <span class="tag">Excel</span>
+      <ul>
+        <li>Analyse des ventes</li>
+        <li>Création de graphiques</li>
+        <li>Storytelling de données</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Requêtez une base de données avec SQL</h3>
+      <span class="tag">SQL</span>
+      <ul>
+        <li>Analyse du marché des assurances habitation</li>
+        <li>Création de requêtes SQL</li>
+        <li>Aide à la décision</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Réalisez une étude de santé publique avec R ou Python</h3>
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <ul>
+        <li>Analyse des données de la FAO</li>
+        <li>Étude de la faim dans le monde</li>
+        <li>Visualisation des données</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Créez et utilisez une base de données immobilière avec SQL</h3>
+      <span class="tag">SQL</span>
+      <span class="tag">SQLite</span>
+      <span class="tag">Power Query</span>
+      <ul>
+        <li>Base de données relationnelle</li>
+        <li>Analyse du marché immobilier</li>
+        <li>Respect du RGPD</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Optimisez la gestion des données d'une boutique avec R ou Python</h3>
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <ul>
+        <li>Nettoyage de données</li>
+        <li>Fusion de bases</li>
+        <li>Analyses statistiques</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Créez un tableau de bord dynamique avec Power BI pour visualiser l'avancement de projets</h3>
+      <span class="tag">Power BI</span>
+      <span class="tag">DAX</span>
+      <span class="tag">Power Query</span>
+      <ul>
+        <li>Dashboard interactif</li>
+        <li>KPI de suivi</li>
+        <li>Analyse des retards</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Analysez des indicateurs de l'égalité femmes/hommes en respect du RGPD</h3>
+      <span class="tag">KNIME</span>
+      <span class="tag">Excel</span>
+      <ul>
+        <li>Indicateurs d’égalité professionnelle</li>
+        <li>Analyse RH</li>
+        <li>Respect du RGPD</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Analysez les ventes d'une librairie avec R ou Python</h3>
+      <span class="tag">Python</span>
+      <span class="tag">Statistiques</span>
+      <ul>
+        <li>680 000+ transactions</li>
+        <li>Comportement client</li>
+        <li>Tests statistiques</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Faites une étude sur l'eau potable</h3>
+      <span class="tag">Power BI</span>
+      <span class="tag">DAX</span>
+      <ul>
+        <li>Dashboards interactifs</li>
+        <li>Accès à l’eau potable</li>
+        <li>Storytelling visuel</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Produisez une étude de marché avec R ou Python</h3>
+      <span class="tag">Python</span>
+      <span class="tag">ACP</span>
+      <span class="tag">K-Means</span>
+      <ul>
+        <li>Clustering</li>
+        <li>Segmentation de marchés</li>
+        <li>Recommandations stratégiques</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Détectez des faux billets avec R ou Python</h3>
+      <span class="tag">Python</span>
+      <span class="tag">Machine Learning</span>
+      <ul>
+        <li>Régression logistique</li>
+        <li>Clustering</li>
+        <li>Classification</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Créez votre portfolio de professionnel de la data</h3>
+      <span class="tag">GitHub</span>
+      <span class="tag">Documentation</span>
+      <ul>
+        <li>Portfolio professionnel</li>
+        <li>Veille technologique</li>
+        <li>Valorisation des compétences</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Expérience Professionnelle</h2>
+  <div class="timeline">
+    <div class="card">
+      <h3>Formateur Freelance – Formalive</h3>
+      <p><strong>2020 – 2021</strong></p>
+      <p>Animation de formations bureautiques, coordination des plannings et suivi administratif.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consultant Freelance – Appen</h3>
+      <p><strong>2018 – 2020</strong></p>
+      <p>Analyse et classification de contenus, contrôle qualité et amélioration de modèles d’IA.</p>
+    </div>
+
+    <div class="card">
+      <h3>Stage de Master – CMU de Genève</h3>
+      <p><strong>2016 – 2018</strong></p>
+      <p>Analyse, synthèse de données, recherche scientifique et interprétation de résultats.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Formation</h2>
+  <div class="timeline">
+    <div class="card">
+      <h3>Formation Data Analyst</h3>
+      <p>OpenClassrooms – Niveau Bac+4 | 2026</p>
+    </div>
+    <div class="card">
+      <h3>Certifications ICDL + Formateur Adulte</h3>
+      <p>2021</p>
+    </div>
+    <div class="card">
+      <h3>Master en Biologie</h3>
+      <p>Université de Genève | 2018</p>
+    </div>
+    <div class="card">
+      <h3>Bachelor en Biologie</h3>
+      <p>Université de Genève | 2016</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>📧 evanfol@live.fr</p>
+    <p>💼 LinkedIn : <a href="https://www.linkedin.com/in/evan-fol/">linkedin.com/in/evan-fol</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Evan Fol – Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
+```
