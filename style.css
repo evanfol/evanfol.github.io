@@ -130,3 +130,10 @@ body {
   background: #ffedd5;
   color: #9a3412;
 }
+
+.projects-subtitle {
+  color: #64748b;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
