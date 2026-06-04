@@ -141,11 +141,10 @@ body {
 }
 
 .project-actions {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  margin-top: auto;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: auto;
 }
 
 .preview-btn {
