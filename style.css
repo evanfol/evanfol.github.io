@@ -137,6 +137,21 @@ body {
   color: #9a3412;
 }
 
+.tag.pandas {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.tag.powerquery {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.tag.ml {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
 .projects-subtitle {
   color: #64748b;
   margin-top: -10px;
