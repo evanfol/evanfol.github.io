@@ -74,16 +74,20 @@ body {
         linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
 }
 
-.project-btn {
+.preview-btn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 16px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #9333ea, #db2777);
   color: white;
-  text-decoration: none;
+  border: none;
   border-radius: 10px;
   font-weight: bold;
+  cursor: pointer;
   transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .project-btn:hover {
@@ -141,18 +145,25 @@ body {
 }
 
 .project-actions {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: auto;
 }
 
-.preview-btn {
-  width: auto;
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
   flex: 1;
   text-align: center;
   white-space: nowrap;
-  padding: 12px 18px;
 }
 
 .preview-btn:hover {
@@ -206,3 +217,4 @@ body {
 
 .carousel-arrow.right {
   right: 40px;
+}
