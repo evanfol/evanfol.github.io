@@ -137,3 +137,73 @@ body {
   margin-bottom: 30px;
   font-size: 17px;
 }
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.preview-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #7c3aed, #db2777);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.preview-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(124,58,237,0.30);
+}
+
+.carousel-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.92);
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-modal img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: #2563eb;
+  border: none;
+  font-size: 35px;
+  padding: 10px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-arrow.left {
+  left: 40px;
+}
+
+.carousel-arrow.right {
+  right: 40px;
