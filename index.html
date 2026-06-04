@@ -243,6 +243,9 @@
         class="project-btn">
         📂 Voir le projet
       </a>
+      <button class="preview-btn" onclick="openCarousel(['images/projet1-1.png', 'images/projet1-2.png', 'images/projet1-3.png', 'images/projet1-4.png', 'images/projet1-5.png'])">
+        👁️ Aperçu
+      </button>
     </div>
 
     <div class="card">
@@ -490,6 +493,47 @@
 
 </footer>
 
+<div id="carousel-modal" class="carousel-modal">
+  <span class="close-btn" onclick="closeCarousel()">×</span>
+
+  <button class="carousel-arrow left" onclick="changeSlide(-1)">❮</button>
+
+  <img id="carousel-image" src="" alt="Aperçu du projet">
+
+  <button class="carousel-arrow right" onclick="changeSlide(1)">❯</button>
+</div>
+
+<script>
+  let currentImages = [];
+  let currentIndex = 0;
+
+  function openCarousel(images) {
+    currentImages = images;
+    currentIndex = 0;
+
+    document.getElementById("carousel-image").src = currentImages[currentIndex];
+    document.getElementById("carousel-modal").style.display = "flex";
+  }
+
+  function closeCarousel() {
+    document.getElementById("carousel-modal").style.display = "none";
+  }
+
+  function changeSlide(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+      currentIndex = currentImages.length - 1;
+    }
+
+    if (currentIndex >= currentImages.length) {
+      currentIndex = 0;
+    }
+
+    document.getElementById("carousel-image").src = currentImages[currentIndex];
+  }
+</script>
+  
 </body>
 </html>
 ```
